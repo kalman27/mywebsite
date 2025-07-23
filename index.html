@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Le Mie Guide Informatiche</title>
+    <style>
+        body {
+            background-color: black;
+            color: white; /* Testo bianco per contrasto con lo sfondo nero */
+            font-family: sans-serif; /* Un font leggibile */
+            margin: 0; /* Rimuove i margini predefiniti del browser */
+            display: flex; /* Usiamo flexbox per centrare l'immagine */
+            flex-direction: column; /* Impila gli elementi verticalmente */
+            min-height: 100vh; /* Fa in modo che il body occupi tutta l'altezza della finestra */
+        }
+        .header-nav {
+            display: flex;
+            justify-content: flex-end; /* Allinea il contenuto a destra */
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box; /* Include padding nel calcolo della larghezza */
+        }
+        .header-nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px; /* Spazio tra i pulsanti */
+            padding: 8px 15px;
+            border: 1px solid white; /* Bordo per farli sembrare pulsanti */
+            border-radius: 5px; /* Angoli arrotondati */
+            transition: background-color 0.3s, color 0.3s; /* Animazione al passaggio del mouse */
+        }
+        .header-nav a:hover {
+            background-color: white;
+            color: black;
+        }
+        .content-container {
+            flex-grow: 1; /* Fa in modo che il contenitore del contenuto occupi lo spazio rimanente */
+            display: flex;
+            justify-content: center; /* Centra orizzontalmente */
+            align-items: center; /* Centra verticalmente */
+        }
+        .center-image {
+            max-width: 80%; /* L'immagine non sarà più grande dell'80% della larghezza del contenitore */
+            height: auto; /* Mantiene le proporzioni dell'immagine */
+            display: block; /* Rimuove lo spazio extra sotto l'immagine */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-nav">
+        <a href="index.html">Home</a>
+        <a href="guide.html">Guide</a>
+        <a href="supportami.html">Supportami</a>
+    </div>
+
+    <div class="content-container">
+        <img src="https://via.placeholder.com/600x400?text=La+Tua+Immagine+Qui" alt="Descrizione della tua immagine" class="center-image">
+    </div>
+
+</body>
+</html>
